@@ -33,33 +33,9 @@ const middle = function(arr){
     return midArray;
 }
 
-
-// const middle = function(arr){
-//     const midArray = []; 
-//     for(let i = 0; i < arr.length; i++) {
-//       if (arr.length <= 2) {
-//         midArray.push()
-//         break;
-//       } else if (arr.length % 2 === 0 && arr.length > 2) {
-//         const evenMidBig = (arr[0] + arr[arr.length - 1] + 1) / 2;
-//         const evenMidSmall = evenMidBig - 1;
-//         midArray.push(evenMidSmall, evenMidBig)
-//         break;
-//       } else if (arr.length % 2 !== 0 && arr.length > 2) {
-//         const oddMid = (arr[0] + arr[arr.length - 1]) / 2;
-//         midArray.push(oddMid)
-//         break;
-//       }
-//     }
-//     return midArray
-//   }
-
-// assertArraysEqual(middle([1]), [])
-
-// assertArraysEqual(middle([1, 2]), [])
-
-// assertArraysEqual(middle([1, 2, 3]), [2])
-// assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
-
-// assertArraysEqual(middle([1, 2, 3, 4]),  [2, 3])
+assertArraysEqual(middle([1]), [])
+assertArraysEqual(middle([1, 2]), [])
+assertArraysEqual(middle([1, 2, 3]), [2])
+assertArraysEqual(middle([1, 2, 3, 4, 5]), [3])
+assertArraysEqual(middle([1, 2, 3, 4]),  [2, 3])
 assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4])
