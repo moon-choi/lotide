@@ -1,12 +1,11 @@
 const assertArraysEqual = function(arr1, arr2){
-    if (eqArrays()) { // if function returns true
+    if (eqArrays(arr1, arr2)) { // if function returns true
         console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
     } else {
         console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
     }
   
 }
-
 
 const eqArrays = function(arr1, arr2){
 	// Check if the arrays are the same length
@@ -23,3 +22,4 @@ const eqArrays = function(arr1, arr2){
 	}
 }    
 
+assertArraysEqual([1, 2, 3], [2, 3]);
