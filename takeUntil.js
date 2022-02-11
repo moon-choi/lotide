@@ -5,7 +5,8 @@ const takeUntil = function(array, callback) {
     for(const element of array) { // can i use for ... of? or for..each?
         if(callback(element)) {
             // takenArray.push(element) // i am pushing everything and i am breaking. the condition won't be checked this way. 
-            break;
+            break; //kicks me out of the for loop, stop the execution 5-12,
+            // return; will finish execution. entire function not just the for loop
         }
         takenArray.push(element)
     }
