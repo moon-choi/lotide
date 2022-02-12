@@ -20,6 +20,7 @@ const assertArraysEqual = function(arr1, arr2){
   
 }
 
+//123
 const middle = function(arr){
     let midArray = []; 
     if(arr.length < 3) {
@@ -33,6 +34,7 @@ const middle = function(arr){
     return midArray;
 }
 
+//123
 assertArraysEqual(middle([1]), [])
 assertArraysEqual(middle([1, 2]), [])
 assertArraysEqual(middle([1, 2, 3]), [2])
