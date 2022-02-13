@@ -28,8 +28,6 @@ const abc = { a: "1", b: "2", c: "3" };
 const result2 = eqObjects(ab, abc); // => false
 
 
-
-
 // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
@@ -38,20 +36,6 @@ const assertEqual = function(actual, expected) {
       console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
   };
-
-const eqArrays = function(arr1, arr2){
-	// Check if the arrays are the same length
-	if (arr1.length !== arr2.length) {
-        return false;
-    }    
-	// Check if all items exist and are in the same order
-	for (let i = 0; i < arr1.length; i++) {
-	    if (arr1[i] !== arr2[i]) {
-            return false;
-	    } 
-  }    
-  return true;
-}      
 
 assertEqual(result1, true);
 assertEqual(result2, false);
