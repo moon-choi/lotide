@@ -1,20 +1,17 @@
+//W01D4
+
 const findKey = function(obj, callback){
     // const numStar = obj.property.stars
-    for (const key in obj) {
-        // if(callback()) {
-        //     // return obj.property;
-        // }
-        // console.log(numStar)
-        // console.log(obj[key])
-        if(callback(obj[key])){
-            return key;
-            console.log(key) // it greys out, because anything after return statement, it won't execute. useless code. 
+    for (const star in obj) {
+        if(callback(obj[star])){
+            return star;
+            console.log(star) // it greys out, because anything after return statement, it won't execute. useless code. 
 
         }    
     }
 }
 
-obj[variableName] //if I am using variable, i have to use bracket notation.
+// obj[variableName] //if I am using variable, i have to use bracket notation.
 
 const result = findKey({
     "Blue Hill": { stars: 1 },
@@ -26,10 +23,6 @@ const result = findKey({
   }, x => x.stars === 2) // => "noma"
 
 
-console.log(result)
-
-
-
   // FUNCTION IMPLEMENTATION
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
@@ -38,3 +31,6 @@ const assertEqual = function(actual, expected) {
       console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
   };
+
+
+assertEqual(result, "noma")
