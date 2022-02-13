@@ -4,7 +4,7 @@
 const eqObjects = function (object1, object2) {
     if (Object.keys(object1).length === Object.keys(object2).length) {
       const obj2Keys = Object.keys(object2); //it’s an array including a, b
-      for (const obj1Key of Object.keys(object1)) { //obj1Key = a   Object.keys() = [a, b]
+      for (const obj1Key of Object.keys(object1)) { // **** obj1Key = a   Object.keys() = [a, b]
         if (!obj2Keys.includes(obj1Key)) { // if [a, b] does not include b
           return false; //then two arrays don't match, so exit the loop.
         }
