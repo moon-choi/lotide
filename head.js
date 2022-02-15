@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const head = function(array, target){
     for(let i = 0; i < array.length; i++) {
         if (array[i] === target) {
@@ -7,7 +9,7 @@ const head = function(array, target){
 }
 const result = head([5,6,7], 5)
 
-// FUNCTION IMPLEMENTATION
+/* refactored
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
       console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -15,5 +17,8 @@ const assertEqual = function(actual, expected) {
       console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
   };
+*/  
   
+/* moved to test folder
 assertEqual(result, 5)
+*/
