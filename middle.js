@@ -1,3 +1,4 @@
+/*
 const eqArrays = function(arr1, arr2){
 	// Check if the arrays are the same length
 	if (arr1.length !== arr2.length) {
@@ -11,6 +12,7 @@ const eqArrays = function(arr1, arr2){
   }    
   return true;
 }    
+*/
 
 /*
 const assertArraysEqual = function(arr1, arr2){
@@ -22,6 +24,7 @@ const assertArraysEqual = function(arr1, arr2){
   
 }
 */
+
 const middle = function(arr){
     let midArray = []; 
     if(arr.length < 3) {
