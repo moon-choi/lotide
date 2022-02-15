@@ -1,3 +1,5 @@
+const assertEqual = require('./assertEqual');
+
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 const tail = function(array){
 // let shifted = [];   
@@ -11,7 +13,9 @@ const tail = function(array){
 // Test Case: Check the original array 
 tail(words); // no need to capture the return value since we are not checking it
 
-// FUNCTION IMPLEMENTATION
+/*
+imported
+
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
       console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
@@ -19,5 +23,9 @@ const assertEqual = function(actual, expected) {
       console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
     }
   };
+*/
 
+
+/* moved to test 
 assertEqual(words.length, 3); // original array should still have 3 elements!
+*/
