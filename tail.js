@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const words = ["Yo Yo", "Lighthouse", "Labs"];
 const tail = function(array){
 // let shifted = [];   
@@ -11,7 +9,20 @@ const tail = function(array){
 }
 
 // Test Case: Check the original array 
-tail(words); // no need to capture the return value since we are not checking it
+// tail(words); // no need to capture the return value since we are not checking it
+
+module.exports = tail;
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 imported
