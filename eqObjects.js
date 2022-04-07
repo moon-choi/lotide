@@ -1,12 +1,11 @@
-// Returns true if both objects have identical keys with identical values.
-// Otherwise you get back a big fat false!
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
 
 const eqObjects = function(object1, object2) {
-  if (Object.keys(object1).length === Object.keys(object2).length) {
-    const keys1 = Object.keys(object1);
-    const keys2 = Object.keys(object2); //it’s an array including a, b
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
+  if (keys1.length === keys2.length) {
     for (const key of keys1) {
-      // **** obj1Key = a   Object.keys() = [a, b]
       if (!keys2.includes(key)) {
         // if [a, b] does not include b
         return false; //then two arrays don't match, so exit the loop.
@@ -17,8 +16,8 @@ const eqObjects = function(object1, object2) {
         return false; // if object1[a] values are not matching (1, 2), exit the loop.
       }
     }
-    return true; //when if statement was true
-  } else {
+    return true; //when every if statement was true (when all for loop is finished)
+  } else { //when array lengths don't match, finish the function right away
     return false;
   }
 };
