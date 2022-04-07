@@ -1,22 +1,21 @@
 
 
 // apr solution
-const string = "LHL";
-const obj = {};
+const string = "L H L";
+const countLetters = function (string) {
+  const obj = {};
+  for (let x of string) {
+    if (x !== ' ') {
+      let counter = 1;
 
-const countLetters = function(string) {
-  const newString = string.replace(/\s/g, ""); // only take away spaces at the end and at the beginning
-
-  for (let x of newString) {
-    let counter = 1;
-
-    if (!obj[x]) {
-      //checking if this is undefiend
-      // if (!obj.hasOwnProperty(x)) { //checking if the object has the property.
-      obj[x] = counter;
-    } else {
-      //you need an else statement.
-      obj[x] += 1;
+      if (!obj[x]) {
+        //checking if this is undefiend
+        // if (!obj.hasOwnProperty(x)) { //checking if the object has the property.
+        obj[x] = counter;
+      } else {
+        //you need an else statement.
+        obj[x] += 1;
+      }
     }
   }
   return obj;
