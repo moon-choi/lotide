@@ -18,8 +18,6 @@ const eqArrays = function (arr1, arr2) {
   }
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-
 // feb solution
 // const eqArrays = function(arr1, arr2) {
 //   // Check if the arrays are the same length
@@ -44,11 +42,11 @@ const assertEqual = function(actual, expected) {
     }
   };
   
-
+*/
 eqArrays([1, 2, 3], [3, 2, 1]) // => false
 eqArrays(["1", "2", "3"], ["1", "2", "3"]) // => true
 eqArrays(["1", "2", "3"], ["1", "2", 3]) // => false
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
-*/
+const result1 = eqArrays([1, 2, 3], [1, 2, 3])
+assertEqual(result1, true); // => should PASS
 
 module.exports = eqArrays;

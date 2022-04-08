@@ -9,10 +9,9 @@ const eqArrays = function(arr1, arr2) {
   for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] !== arr2[i]) {
       return false;
-    } else {
-      return true;
     }
   }
+  return true;
 };
 
 const assertArraysEqual = function(actual, expected) {
@@ -26,4 +25,5 @@ const assertArraysEqual = function(actual, expected) {
 
 assertArraysEqual([1, 2, 3], [2, 3]);
 
-module.exports = assertArraysEqual;
+// module.exports = assertArraysEqual;
+
