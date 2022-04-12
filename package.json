@@ -1,7 +1,8 @@
 {
+  
   "name": "lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/moon-choi/lotide.git"
   },
-  "author": "",
+  "author": "Moon Choi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/moon-choi/lotide/issues"
