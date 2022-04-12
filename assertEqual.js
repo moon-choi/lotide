@@ -8,12 +8,6 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// TEST CODE
-/* moved to test folder
-
-*/
-module.exports = assertEqual;
-
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual(1, 1);
 //assertEqual: only receiving primitive values
+
+module.exports = assertEqual;

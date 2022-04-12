@@ -1,26 +1,3 @@
-const eqArrays = function(arr1, arr2) {
-  // Check if the arrays are the same length
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-  // Check if all items exist and are in the same order
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2)) {
-    // if function returns true
-    console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
-  }
-};
-
 //apr solution
 const middle = function(arr) {
   let midArr = [];
@@ -51,12 +28,5 @@ const middle = function(arr) {
 //   }
 //   return midArray;
 // };
-
-assertArraysEqual(middle([1]), []);
-assertArraysEqual(middle([1, 2]), []);
-assertArraysEqual(middle([1, 2, 3]), [2]);
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArraysEqual(middle([1, 2, 3, 4, 5, 6]), [3, 4]);
 
 module.exports = middle;
